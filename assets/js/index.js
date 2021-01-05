@@ -31,6 +31,7 @@ function getUserInfo() {
         //     Authorization: localStorage.getItem('token') || ''
         // },
         success: function (res) {
+            console.log(1111111111)
             if (res.status !== 0) {
                 return layui.layer.msg('获取用户信息失败！')
             }
